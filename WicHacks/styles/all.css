@@ -1,0 +1,300 @@
+.banner {
+margin-left: 25%;
+margin-right: 25%;
+width: 50%;
+}
+
+
+body {
+    padding: 20px;
+    font-family: Open Sans, Light;
+
+}
+
+h1 {
+
+    font-family: Open Sans, Light;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+.nav {
+    font-family: Open Sans, Light;
+    list-style: none;
+    text-align: center;
+    display: flex;
+}
+
+li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.nav1, .nav2, .nav3 {
+    flex-grow: 1;
+}
+
+
+.bodycontainer {
+    width: 100%;
+}
+
+.loginformat {
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+}
+
+.globe{
+    align-content: center;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeparagraph{
+
+    font-family: Open Sans, Light;
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+    padding: 40px;
+    font-size: 30px;
+    /*border-radius: 10px; */
+    color: #9ebfc1;
+}
+
+.twoboxes {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.homeleft {
+    width: 1000px;
+    flex-grow: 3;
+}
+
+.homeright {
+    margin-top: 80px;
+    width: 350px;
+    flex-grow: 1;
+}
+
+.loginform ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.space{
+    margin: 40px 40px 0px 0px;
+}
+
+.galleryimg {
+    border-style: dashed;
+    border-color:lightgray;
+    object-fit: cover;
+    height: 290px;
+    width: 290px;
+    padding: 8px;
+    opacity: .9;
+}
+
+.galleryimg:hover {
+    opacity: 1;
+}
+
+.container:hover .overlay{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+
+.searchform {
+    padding: 20px;
+}
+
+.gallerybox {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.logout {
+    text-align: right;
+    padding: 15px;
+}
+
+.gallerybox ul li {
+    display: inline;
+}
+
+
+/* img hover */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background:#ffffff;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+}
+
+.container{
+  padding: 40px;
+  float: left;
+  width: 100%;
+}
+
+
+.container .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+    padding: 60px;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: black;
+  font-size: 30pt;
+  font-family: KG Lego House;
+  font-weight: 1000;
+  margin-bottom: 0.5em;
+}
+
+.content-details p{
+  color: black;
+  font-family: KG Lego House;
+  font-size: 18pt;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+/* Information Boxes */
+
+.goals{
+    font-family: Open Sans, Light;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    font-style: italic;
+}
+* {
+    box-sizing: border-box;
+  }
+  .information {
+    max-width: 3000px;
+    max-height: 600px;
+    margin: 30px auto;
+    padding: 0 20px;
+    width: 100%;
+    display: grid;
+    /* Define Auto Row size */
+    grid-auto-rows: 200px;
+    /*Define our columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+
+  .info{
+      padding: 20px;
+  }
+
+  article {
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+
+  article:nth-child(odd) {
+    background-color:
+   #9ebfc1;
+
+  }
+
+  article:nth-child(even) {
+    background-color: #afbe29;
+  }
